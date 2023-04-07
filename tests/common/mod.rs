@@ -17,6 +17,7 @@ pub const MIMC_ROUNDS: usize = 322;
 ///     return xL
 /// }
 /// ```
+/// 
 pub fn mimc<S: PrimeField>(mut xl: S, mut xr: S, constants: &[S]) -> S {
     assert_eq!(constants.len(), MIMC_ROUNDS);
 

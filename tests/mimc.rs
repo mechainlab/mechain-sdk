@@ -17,9 +17,9 @@ use bellman::groth16::{
 };
 
 mod common;
-
 use common::*;
 
+//zk-hash test
 #[test]
 fn test_mimc() {
     // This may not be cryptographically safe, use
